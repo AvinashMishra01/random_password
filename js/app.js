@@ -6,7 +6,7 @@ const alphabets= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 // selectors
 const passBox = document.getElementById("pass-box")
 const totalChar = document.getElementById("total-char")
-const alphaInput=  document.getElementById("aplha-char")
+const alphaInput=  document.getElementById("alpha-char")
 const upperInput = document.getElementById("upper-case")
 const lowerInput = document.getElementById("lower-case")
 const numberInput = document.getElementById("numbers")
