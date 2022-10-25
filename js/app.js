@@ -2,10 +2,11 @@ const upperSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const lowerSet = "abcdefghijklmnopqrstuvwxyz"
 const numberSet = "1234567890"
 const symbolSet = "~!@#$%^&*()_+/"
-
+const alphabets= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 // selectors
 const passBox = document.getElementById("pass-box")
 const totalChar = document.getElementById("total-char")
+const alphaInput=  document.getElementById("aplha-char")
 const upperInput = document.getElementById("upper-case")
 const lowerInput = document.getElementById("lower-case")
 const numberInput = document.getElementById("numbers")
@@ -18,6 +19,10 @@ const getRandomData = (dataSet) => {
 }
 
 const generatePassword = (password = "") => {
+    
+    if(alphaInput.checked) {
+          password += getRandomData(alphabets)
+    }
     if (upperInput.checked) {
         password += getRandomData(upperSet)
     }
